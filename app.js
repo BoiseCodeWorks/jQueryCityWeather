@@ -14,10 +14,9 @@
 		var urlBase = 'http://api.zippopotam.us/us/';
 		var url = urlBase + zip;
 
-		$.get(url, function (data, status) {
+		// use jQuery get to get the zip code data	
+		// transform the data to camelCase proprty names	
 
-			// transform the data to camelCase proprty names			
-		});
 	}
 
 	function getWeather(zip, callback) {
@@ -26,8 +25,6 @@
 		var appId = 'bd82255fd0a21fa1238699b9eda2ee35';
 		var url = urlBase + 'weather?appid=' + appId + '&units=imperial&zip=' + zip;
 
-		$.get(url, function (data, status) {
-			
-		});
+		// use jQuery get to get the zip code weather data
 	}
 })();
